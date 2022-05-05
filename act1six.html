@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletería</title>
+</head>
+<body>
+    <form action="./act1six.php" method="post">
+        <fieldset>
+            <legend><h1>DATOS PARA SOLICITAR BOLETOS</h1></legend>
+            <label for="name">NOMBRE:</label>
+            <input type="text" id="name" name="name" required placeholder="coloque su nombre aquí"><br><br>
+            <label for="apellidos">APELLIDOS:</label>
+            <input type="text" id="apellidos" name="apellidos" required placeholder="coloque sus apellidos aquí"><br><br>
+            <label for="age">Edad:</label>
+            <input type="number" id="age" required placeholder="coloque su edad aquí"><br><br>
+            <label for="address">Dirección:</label>
+            <textarea name="address" id="address" required placeholder="coloque su dirección aquí"></textarea><br><br>
+            <label for="tickets">Número de boletos:</label>
+            <input type="number" id="tickets" required><br><br>
+            <label>Tipo de boleto:</label>
+            <select required>
+                <option>Flash pass</option>
+                <option>Normal</option>
+                <option>Pro</option>
+                <option>Combo</option>
+                <option>Anual</option>
+            </select><br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reestablecer datos</button>
+        </fieldset>
+    </form>
+</body>
+</html>
